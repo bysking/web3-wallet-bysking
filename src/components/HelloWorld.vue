@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import { Button } from "vant";
 
 defineProps<{ msg: string }>()
 
@@ -11,7 +12,7 @@ const  create = () => {
 
 <template>
   <div>
-    <Button @click="create">创建钱包</Button>
+    <Button type="primary" @click="create">创建钱包</Button>
   </div>
 </template>
 
